@@ -1,0 +1,1089 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  background-color: white;
+  padding: 38px;
+}
+header nav {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  margin-top: -13px;
+  align-items: center;
+}
+header nav .logo {
+  display: flex;
+}
+header nav .logo h1 {
+  margin-top: -4px;
+}
+header nav .menu-svg {
+  cursor: pointer;
+}
+header nav .menu-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  width: 160px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+header nav .menu-ul li {
+  font-size: medium;
+  padding: 10px 30px 10px 30px;
+}
+header nav .menu-ul li:hover {
+  background-color: #BCC5EF;
+}
+header nav .menu-ul .money {
+  margin-top: 90px;
+}
+header nav .menu-ul .close {
+  float: right;
+  margin: 26px;
+  cursor: pointer;
+}
+header nav .menu-ul.open-nav {
+  transform: none;
+}
+
+main {
+  background-color: #DDD8DD;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+.container .greetings {
+  height: 80px;
+  width: 100%;
+  background-color: #DDD8DD;
+  position: relative;
+}
+.container .greetings h1 {
+  position: absolute;
+  font-size: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .greetings .date-920px-above {
+  display: none;
+}
+.container .recent-activity {
+  background-color: #DDD8DD;
+  padding: 0 0 30px 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 12px;
+  grid-template-areas: "items-1  items-2" "items-1  items-3" "items-1  items-4";
+}
+.container .recent-activity .items {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(163, 163, 163);
+}
+.container .recent-activity .items img {
+  width: 27px;
+  height: 27px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.container .recent-activity .items.items-1 {
+  background-color: #F4F6FA;
+  grid-area: items-1;
+  height: 262px;
+  width: 175px;
+  padding: 22px;
+  border-radius: 10px;
+  margin-left: 1px;
+}
+.container .recent-activity .items.items-1 h2 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.container .recent-activity .items.items-1 h2 span {
+  font-weight: 700;
+}
+.container .recent-activity .items.items-1 img {
+  margin-right: 14px;
+  margin-bottom: 14px;
+}
+.container .recent-activity .items.items-1 .peoples {
+  width: 127px;
+  height: 25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+.container .recent-activity .items.items-1 .peoples img {
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 3px 8px;
+}
+.container .recent-activity .items.items-1 .peoples h3 {
+  font-size: 10px;
+  margin-left: 11px;
+  font-weight: 500;
+}
+.container .recent-activity .items.items-1 .peoples .inside {
+  margin-left: 28px;
+}
+.container .recent-activity .items.items-1 .seeAll {
+  width: 127px;
+  height: 25px;
+  background-color: black;
+  position: relative;
+  border-radius: 5px;
+}
+.container .recent-activity .items.items-1 .seeAll h2 {
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 43px;
+}
+.container .recent-activity .items.items-2 {
+  grid-area: items-2;
+  background-color: #F4F6FA;
+  width: 97px;
+  height: 80px;
+  border-radius: 10px;
+  padding: 10px 0 0 26px;
+}
+.container .recent-activity .items.items-2 h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.container .recent-activity .items.items-2 h3 {
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: -4px;
+}
+.container .recent-activity .items.items-2 .icon-div-1 {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 3px 0 0 13px;
+}
+.container .recent-activity .items.items-2 .icon-div-1 .icon {
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+}
+.container .recent-activity .items.items-3 {
+  grid-area: items-3;
+  background-color: #F4F6FA;
+  width: 97px;
+  height: 80px;
+  padding: 10px 0 0 20px;
+  border-radius: 10px;
+}
+.container .recent-activity .items.items-3 h3 {
+  font-size: 11px;
+  font-weight: 500;
+}
+.container .recent-activity .items.items-3 h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.container .recent-activity .items.items-3 .icon-div-2 {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 3px 0 0 19px;
+}
+.container .recent-activity .items.items-3 .icon-div-2 .icon {
+  margin: 6px 4.5px 5.25px 5.4px;
+}
+.container .recent-activity .items.items-4 {
+  grid-area: items-4;
+  background-color: #F4F6FA;
+  width: 97px;
+  height: 80px;
+  border-radius: 10px;
+  padding: 18px 13.06px;
+}
+.container .recent-activity .items.items-4 h1 {
+  font-size: 18px;
+}
+.container .recent-activity .items.items-4 .icon-div-3 {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 3px 0 0 26px;
+}
+.container .recent-activity .items.items-4 .icon-div-3 .icon {
+  margin: 5px 5.25px 5.84px 5.83px;
+}
+.container .addMoney {
+  width: 100%;
+  height: 115px;
+  background-color: #DDD8DD;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  grid-template-areas: "addMoney-info  date";
+  align-items: center;
+}
+.container .addMoney .addMoney-info {
+  grid-area: addMoney-info;
+  width: 195px;
+  height: 77px;
+  background-color: #F4F6FA;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.container .addMoney .addMoney-info img {
+  width: 27px;
+  height: 27px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin: 0 13px 0 9px;
+}
+.container .addMoney .addMoney-info .info-text h4 {
+  font-size: 8px;
+  font-weight: 300;
+  color: #322F2F;
+}
+.container .addMoney .addMoney-info .info-text h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+.container .addMoney .addMoney-info .addBtn {
+  width: 40px;
+  height: 30px;
+  background-color: #000000;
+  margin-left: 28px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.container .addMoney .addMoney-info .addBtn h2 {
+  font-size: 14px;
+  margin: 0 7px;
+  color: #F7F7F7;
+}
+.container .addMoney .date {
+  grid-area: date;
+  width: 76px;
+  height: 77px;
+  background-color: #F4F6FA;
+  padding-left: 18px;
+  border-radius: 10px;
+  margin-left: 7px;
+}
+.container .addMoney .date .calender-icon {
+  width: 15px;
+  height: 15px;
+  float: right;
+  margin: 5px 8px 0 0;
+}
+.container .addMoney .date h2.day {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 6px;
+}
+.container .addMoney .date h1.month {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -4px;
+}
+.container .addMoney .date h2.year {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: -5px;
+}
+.container .user-section {
+  width: 100%;
+  height: 368px;
+  background-color: #DDD8DD;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 182px 99px;
+  grid-template-areas: "profile  card" "profile  pro";
+  gap: 12px;
+  align-content: center;
+}
+.container .user-section .profile {
+  grid-area: profile;
+  background-color: #FFFFFF;
+  padding: 21px 15px;
+  border-radius: 10px;
+}
+.container .user-section .profile img {
+  width: 27px;
+  height: 27px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.container .user-section .profile h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.container .user-section .profile h3 {
+  font-size: 10px;
+  font-weight: 400;
+}
+.container .user-section .profile .income-expense {
+  width: 141.58px;
+  height: 42px;
+  background-color: #F5F7FB;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  border-radius: 5px;
+}
+.container .user-section .profile .income-expense h2 {
+  font-size: 10px;
+  background-color: white;
+}
+.container .user-section .profile .income-expense .income {
+  font-weight: 400;
+  padding: 5px 11.44px 6px;
+  margin-left: 7.62px;
+  color: #ADB8CF;
+  background-color: #F5F7FB;
+}
+.container .user-section .profile .income-expense .expense {
+  font-weight: 400;
+  padding: 5px 11.44px 6px;
+  margin-left: 4.36px;
+  border-radius: 5px;
+  color: #467FD5;
+}
+.container .user-section .profile .expense-section {
+  width: 155.42px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  margin: 15px 0 17px;
+}
+.container .user-section .profile .expense-section .expense-icon-div {
+  width: 20px;
+  height: 20px;
+  background-color: #FFEBEB;
+  border-radius: 50%;
+  margin-right: 9.41px;
+}
+.container .user-section .profile .expense-section .expense-icon-div .netflix-icon {
+  margin: 4px 6.38px 4px 6px;
+}
+.container .user-section .profile .expense-section .info-expense h2 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.container .user-section .profile .expense-section .info-expense h4 {
+  font-size: 8px;
+  font-weight: 500;
+  color: #737373;
+  margin-top: -2px;
+}
+.container .user-section .profile .expense-section .info-expense-money {
+  display: flex;
+  align-items: center;
+}
+.container .user-section .profile .expense-section .info-expense-money .icon-expense {
+  margin-left: 25.23px;
+  margin-right: 5px;
+}
+.container .user-section .profile .expense-section .expense-money {
+  margin-top: 2px;
+}
+.container .user-section .profile .expense-section.expense-section-2 .expense-icon-div {
+  background-color: #DAFDE9;
+}
+.container .user-section .profile .expense-section.expense-section-2 .expense-icon-div .spotify-icon {
+  margin: 4px;
+}
+.container .user-section .profile .expense-section.expense-section-2 .info-expense-money .icon-expense {
+  margin-left: 24.3px;
+}
+.container .user-section .profile .expense-section.expense-section-3 .expense-icon-div .YouTube-icon {
+  margin-left: 4px;
+}
+.container .user-section .profile .expense-section.expense-section-3 .info-expense-money .icon-expense {
+  margin-left: 15.23px;
+}
+.container .user-section .card {
+  grid-area: card;
+  background-color: #F8F3F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.container .user-section .card .first-h1 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 6px;
+}
+.container .user-section .card .h1-2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: -4px 0 4px 0;
+}
+.container .user-section .card .acc-card {
+  width: 89px;
+  height: 59px;
+  background-color: #004AF1;
+  padding: 7px 8px;
+  border-radius: 5px;
+}
+.container .user-section .card .acc-card .platinum {
+  font-size: 5px;
+  font-weight: 500;
+  color: #D3D3D3;
+}
+.container .user-section .card .acc-card .card-number {
+  font-size: 14px;
+  font-weight: 400;
+  font-weight: normal;
+  color: #FFFFFF;
+  margin: 4px 9px 3px;
+}
+.container .user-section .card .acc-card .visa-icon {
+  float: right;
+  margin-top: 3px;
+}
+.container .user-section .card .req-cash {
+  width: 89px;
+  height: 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.container .user-section .card .req-cash h1 {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.container .user-section .card .charge {
+  width: 89px;
+  height: 20px;
+  background-color: #000000;
+  text-align: center;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+.container .user-section .card .charge h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 2px;
+  color: #FFFFFF;
+}
+.container .user-section .pro {
+  grid-area: pro;
+  background-color: #345EEB;
+  padding: 13px 0 17px 20px;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+.container .user-section .pro .head {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.container .user-section .pro .sub-head {
+  font-size: 11px;
+  font-weight: bold;
+}
+.container .user-section .pro .upgrade-btn {
+  width: 59px;
+  height: 24px;
+  background-color: white;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 9.56px;
+}
+.container .user-section .pro .upgrade-btn .buy-btn {
+  margin: 0 3px 0 7px;
+}
+.container .user-section .pro .upgrade-btn h1 {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+footer {
+  padding: 38px;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+footer .first-section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 23px;
+}
+footer .first-section a {
+  width: 72px;
+  height: 22px;
+  font-size: 9px;
+  background-color: black;
+  text-align: center;
+  padding: 4px;
+  color: white;
+  margin-top: 16px;
+}
+footer .second-section {
+  margin-right: 25px;
+}
+footer .second-section h2 {
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+footer .third-section h2 {
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+footer .third-section .social-media-icons .icon {
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 325px) {
+  main {
+    height: auto;
+  }
+  main .container {
+    height: auto;
+  }
+  main .container .recent-activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .container .addMoney {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .container .user-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .second-section {
+    margin-top: 17px;
+  }
+  footer .third-section {
+    margin-top: 19px;
+  }
+}
+@media only screen and (min-width: 420px) {
+  footer .first-section {
+    margin-right: 30px;
+    margin-left: 56px;
+  }
+  footer .second-section {
+    margin-right: 30px;
+  }
+}
+@media only screen and (min-width: 680px) {
+  header nav .logo .logo-svg {
+    margin-left: 20px;
+  }
+  header nav .menu-svg {
+    margin-right: 30px;
+  }
+  footer .first-section {
+    margin-right: 100px;
+    margin-left: 136px;
+  }
+  footer .second-section {
+    margin-right: 100px;
+  }
+}
+@media only screen and (min-width: 920px) {
+  header {
+    height: 100px;
+  }
+  header nav {
+    align-items: center;
+  }
+  header nav .logo .logo-svg {
+    width: 200px;
+    height: 46px;
+    margin-left: 50px;
+  }
+  header nav .menu-svg {
+    display: none;
+  }
+  header nav .menu-ul {
+    transform: translateX(0);
+    width: auto;
+    height: auto;
+    background: none;
+    position: unset;
+    display: flex;
+  }
+  header nav .menu-ul .close {
+    display: none;
+  }
+  header nav .menu-ul li.money {
+    margin-top: 0;
+    margin-right: -10px;
+  }
+  header nav .menu-ul li {
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  header nav .menu-ul li.try-prem {
+    padding: 14px 14px 14px 15px;
+    background-color: #000000;
+    color: white;
+    margin: -8px 50px 0 0;
+    border-radius: 10px;
+  }
+  .container {
+    width: unset;
+    height: unset;
+    padding: unset;
+    margin: unset;
+    max-width: unset;
+    display: grid;
+    grid-template-columns: 1fr -1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    width: 906px;
+    height: auto;
+    margin: 0 auto;
+    grid-template-areas: "greetings greetings greetings date-920px-above" "recent-activity  recent-activity  user-section user-section";
+  }
+  .container .greetings {
+    grid-area: greetings;
+  }
+  .container .greetings h1 {
+    font-size: 30px;
+    top: 66%;
+  }
+  .container .date-920px-above {
+    grid-area: date-920px-above;
+    float: right;
+    display: flex;
+    width: 275px;
+    height: 45px;
+    background-color: #FFFFFF;
+    margin-top: 47px;
+    margin-right: -64px;
+    border-radius: 10px;
+  }
+  .container .date-920px-above .date-change-icon-div-1 {
+    margin-top: 14px;
+    margin-left: 29px;
+  }
+  .container .date-920px-above h1 {
+    font-size: 21px;
+    margin-left: 62px;
+    font-weight: 500;
+  }
+  .container .date-920px-above h1 span {
+    margin: 15px;
+    font-weight: 700;
+  }
+  .container .date-920px-above svg.icon-2 {
+    margin-left: 204px;
+    margin-top: 18px;
+  }
+  .container .recent-activity {
+    grid-area: recent-activity;
+    height: 406px;
+    max-width: 421px;
+  }
+  .container .recent-activity #left-side-box {
+    width: 216px;
+    height: 361px;
+    text-align: center;
+  }
+  .container .recent-activity #left-side-box h2 {
+    margin-left: -16px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .container .recent-activity #left-side-box img {
+    width: 37px;
+    height: 37px;
+  }
+  .container .recent-activity #left-side-box .peoples {
+    width: 162px;
+    height: 38px;
+  }
+  .container .recent-activity #left-side-box .peoples img {
+    width: 35px;
+    height: 35px;
+  }
+  .container .recent-activity #left-side-box .peoples h1 {
+    font-size: 13px;
+  }
+  .container .recent-activity #left-side-box .seeAll {
+    width: 161px;
+    height: 38px;
+    margin-top: 27px;
+  }
+  .container .recent-activity #left-side-box .seeAll h2 {
+    margin: unset;
+  }
+  .container .recent-activity .items.items-2, .container .recent-activity .items.items-3, .container .recent-activity .items.items-4 {
+    height: unset;
+    width: unset;
+    width: 176px;
+    height: 104px;
+  }
+  .container .recent-activity .items.items-2, .container .recent-activity .items.items-3, .container .recent-activity .items.items-4 {
+    margin: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .recent-activity .items.items-2 h1, .container .recent-activity .items.items-3 h1, .container .recent-activity .items.items-4 h1 {
+    font-size: 24px;
+  }
+  .container .recent-activity .items.items-2 h3, .container .recent-activity .items.items-3 h3, .container .recent-activity .items.items-4 h3 {
+    font-size: 20px;
+    margin-top: -9px;
+  }
+  .container .recent-activity .items.items-2 .icon-div-1, .container .recent-activity .items.items-3 .icon-div-1, .container .recent-activity .items.items-4 .icon-div-1 {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+  }
+  .container .recent-activity .items.items-2 .icon-div-1 .icon, .container .recent-activity .items.items-3 .icon-div-1 .icon, .container .recent-activity .items.items-4 .icon-div-1 .icon {
+    height: 18px;
+    width: 21px;
+    margin-top: 7px;
+  }
+  .container .recent-activity .items.items-3 h1 {
+    font-size: 24px;
+    margin-top: -6px;
+  }
+  .container .recent-activity .items.items-3 .icon-div-2 {
+    width: 30px;
+    height: 30px;
+    margin: unset;
+    margin-top: -2px;
+  }
+  .container .recent-activity .items.items-3 .icon-div-2 .icon {
+    margin: 6px 5.5px 5.25px 6.4px;
+    width: 19px;
+    height: 18px;
+  }
+  .container .recent-activity .items.items-4 .icon-div-3 {
+    width: 30px;
+    height: 30px;
+    margin: unset;
+  }
+  .container .recent-activity .items.items-4 .icon-div-3 .icon {
+    margin: 4px 5.25px 6.84px 4.83px;
+    width: 21px;
+    height: 21px;
+  }
+  .container .addMoney {
+    display: none;
+  }
+  .container .addMoney .addMoney-info {
+    width: 250px;
+    height: 60px;
+    margin-left: -62px;
+    z-index: 1;
+  }
+  .container .addMoney .addMoney-info img {
+    width: 40px;
+    height: 40px;
+  }
+  .container .addMoney .addMoney-info .info-text h4 {
+    font-size: 14px;
+  }
+  .container .addMoney .addMoney-info .info-text h1 {
+    margin-top: -3px;
+    font-size: 24px;
+  }
+  .container .addMoney .addMoney-info .addBtn {
+    display: flex;
+    justify-content: center;
+    width: 67px;
+    height: 38px;
+  }
+  .container .addMoney .addMoney-info .addBtn h2 {
+    font-size: 21px;
+  }
+  .container .addMoney .addMoney-info .date {
+    width: 288px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .container .addMoney .addMoney-info .date .calender-icon {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 32px;
+    height: 40px;
+  }
+  .container .addMoney .addMoney-info .date .day {
+    font-size: 27px;
+    margin-left: 10px;
+  }
+  .container .addMoney .addMoney-info .date .month {
+    font-size: 31px;
+    margin-top: 3px;
+    margin-left: 10px;
+  }
+  .container .addMoney .addMoney-info .date .year {
+    font-size: 27px;
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+  .container .user-section {
+    grid-area: user-section;
+    grid-template-areas: "card profile" "pro profile";
+    grid-template-rows: 90px 189px;
+    margin: unset;
+    padding: unset;
+    height: 364px;
+  }
+  .container .user-section .profile {
+    width: 233px;
+    height: 358px;
+    margin-top: -32px;
+    margin-left: 15px;
+    padding: 21px 25px;
+  }
+  .container .user-section .profile img {
+    width: 50px;
+    height: 50px;
+  }
+  .container .user-section .profile h1 {
+    font-size: 24px;
+  }
+  .container .user-section .profile h3 {
+    font-size: 20px;
+  }
+  .container .user-section .profile .income-expense {
+    width: 167.58px;
+    height: 43px;
+  }
+  .container .user-section .profile .income-expense h2 {
+    font-size: 14px;
+  }
+  .container .user-section .profile .expense-section {
+    width: 196.4px;
+  }
+  .container .user-section .profile .expense-section .expense-icon-div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .user-section .profile .expense-section .expense-icon-div .netflix-icon {
+    width: 23px;
+    height: 18px;
+  }
+  .container .user-section .profile .expense-section .info-expense {
+    margin-left: 5px;
+  }
+  .container .user-section .profile .expense-section .info-expense h2 {
+    font-size: 17px;
+  }
+  .container .user-section .profile .expense-section .info-expense h4 {
+    font-size: 11px;
+  }
+  .container .user-section .profile .expense-section .info-expense-money .icon-expense {
+    margin-left: 28.23px;
+    margin-right: 5px;
+  }
+  .container .user-section .profile .expense-section .expense-money {
+    font-size: 20px;
+  }
+  .container .user-section .profile .expense-section-2 .expense-icon-div .spotify-icon {
+    width: 23px;
+    height: 18px;
+  }
+  .container .user-section .profile .expense-section-2 .info-expense-money .icon-expense {
+    margin-left: 19.3px;
+    margin-right: 5px;
+  }
+  .container .user-section .profile .expense-section-3 .expense-icon-div .YouTube-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+  }
+  .container .user-section .profile .expense-section-3 .info-expense-money .icon-expense {
+    margin-left: 13.23px;
+  }
+  .container .user-section .card {
+    width: 222px;
+    height: 216px;
+    margin-top: -33px;
+    margin-left: 20px;
+  }
+  .container .user-section .card .head-card-text {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 4px;
+  }
+  .container .user-section .card .head-card-text .first-h1 {
+    margin-top: -3px;
+    font-size: 24px;
+  }
+  .container .user-section .card .head-card-text .h1-2 {
+    margin-left: 7px;
+    font-size: 26px;
+  }
+  .container .user-section .card .acc-card {
+    width: 150px;
+    height: 80px;
+  }
+  .container .user-section .card .acc-card .platinum {
+    font-size: 12px;
+  }
+  .container .user-section .card .acc-card .card-number {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 1px;
+  }
+  .container .user-section .card .acc-card .visa-icon {
+    font-size: 20px;
+    height: 20px;
+    width: 50px;
+    margin-top: 0px;
+  }
+  .container .user-section .card .req-cash {
+    width: 150px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+  }
+  .container .user-section .card .req-cash h1 {
+    font-size: 16px;
+    margin-top: -1px;
+  }
+  .container .user-section .card .charge {
+    width: 150px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+  }
+  .container .user-section .card .charge h1 {
+    font-size: 18px;
+    margin-top: -4px;
+  }
+  .container .user-section .pro {
+    width: 222px;
+    height: 133px;
+    margin-top: 92px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .user-section .pro .head {
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: -17px;
+  }
+  .container .user-section .pro .sub-head {
+    font-size: 18px;
+    margin-left: -17px;
+  }
+  .container .user-section .pro .upgrade-btn {
+    width: 100px;
+    height: 30px;
+    margin-left: -15px;
+  }
+  .container .user-section .pro .upgrade-btn .buy-btn {
+    height: 18px;
+    width: 18px;
+  }
+  .container .user-section .pro .upgrade-btn h1 {
+    font-size: 16px;
+    margin-left: 3px;
+  }
+  footer .first-section {
+    margin-right: 100px;
+    margin-left: 151px;
+  }
+  footer .first-section svg {
+    width: 100px;
+    height: 40px;
+  }
+  footer .first-section a {
+    width: 153px;
+    height: 40px;
+    font-size: 20px;
+  }
+  footer .second-section {
+    margin-right: 100px;
+  }
+  footer .second-section h2 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer .third-section h2 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  footer .third-section .social-media-icons .icon {
+    margin-right: 5px;
+    width: 30px;
+    height: 20px;
+    margin-top: 7px;
+  }
+}/*# sourceMappingURL=style.css.map */
